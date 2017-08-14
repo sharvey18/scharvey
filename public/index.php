@@ -153,7 +153,7 @@
 					<div class='col-xs-12 col-sm-12 col-md-6 col-lg-6'>
 						<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
 							<h3>Weather Wizard</h3>
-								<a href='#' target='_blank' class='thumbnail'><img src='images/slide2/under_construction.jpg' alt='Warriors Softball Company' title='Warriors Softball Company'></a><br>
+								<a href='http://weather-wizard.scharvey.com/' target='_blank' class='thumbnail'><img src='images/slide2/under_construction.jpg' alt='Weather Wizard' title='Weather Wizard'></a><br>
 								<div
 									class="fb-like"
 									data-layout='button_count'

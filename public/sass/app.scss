@@ -1,0 +1,385 @@
+@import "partials/socialStyles";
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+// thank-you styles //
+
+// body, html {
+//   margin: 0;
+//   padding: 0;
+//   background-color: #939598;
+// }
+//
+// .container {
+//   margin-top: 50px;
+// }
+
+/**********************************
+Responsive navbar-brand image CSS
+- Remove navbar-brand padding for firefox bug workaround
+- add 100% height and width auto ... similar to how bootstrap img-responsive class works
+***********************************/
+
+.active {
+  background-color: #F26522;
+  text-decoration: none;
+  line-height: 50px;
+}
+
+.example3 {
+  .navbar-fixed-top {
+    /*margin-top: 50px;*/
+    background-color: #3B3738;
+    border: none;
+  }
+  .navbar-brand {
+    height: 80px;
+  }
+  .navbar-brand {
+    padding: 0px;
+    > img {
+      height: 100%;
+      padding: 15px;
+      width: auto;
+    }
+  }
+  .nav > li > a {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+  }
+  .navbar-toggle {
+    padding: 10px;
+    margin: 25px 15px 25px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-toggle {
+    border: none;
+    outline: none;
+  }
+  span.icon-bar {
+    padding: 2px;
+  }
+}
+
+/*************************** Start Slides *********************/
+
+h1 {
+  font-family: 'Play', sans-serif;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  /*position: relative;*/
+  /*padding-bottom: 30px;*/
+}
+
+a > {
+  .fa-chevron-circle-up.fa-5x, .fa-chevron-circle-down.fa-5x {
+    color: #F26522 !important;
+    &:hover {
+      color: #ED4D0f !important;
+    }
+  }
+}
+
+div#scrollButton {
+  padding-top: 25px;
+  position: relative;
+  -webkit-animation: scrollButtonDown 0s infinite;
+  /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 6s;
+  /* Chrome, Safari, Opera */
+  -webkit-animation-timing-function: ease-in-out;
+  animation: scrollButtonDown 0s infinite;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out;
+  cursor: pointer;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes scrollButtonDown {
+  0% {
+    top: 0px;
+    bottom: 20px;
+  }
+
+  25% {
+    top: 20px;
+    bottom: 0px;
+  }
+
+  50% {
+    top: 0px;
+    bottom: 20px;
+  }
+
+  75% {
+    top: 20px;
+    bottom: 0px;
+  }
+
+  100% {
+    top: 0px;
+    bottom: 20px;
+  }
+}
+
+
+/* Standard syntax */
+@keyframes scrollButtonDown {
+  0% {
+    top: 0px;
+    bottom: 20px;
+  }
+
+  25% {
+    top: 20px;
+    bottom: 0px;
+  }
+
+  50% {
+    top: 0px;
+    bottom: 20px;
+  }
+
+  75% {
+    top: 20px;
+    bottom: 0px;
+  }
+
+  100% {
+    top: 0px;
+    bottom: 20px;
+  }
+}
+
+
+#slide1 {
+  background-image: url(../images/slide1/gplaypattern/gplaypattern.png);
+  padding-top: 190px;
+  padding-bottom: 70px;
+}
+
+#welcomeHeader {
+  font-size: 110px;
+  text-align: center;
+  animation-name: welcomeHeaderIntro;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+#welcomeSubHeading {
+  text-align: center;
+}
+
+@keyframes welcomeHeaderIntro {
+  from {
+    font-size: 0px;
+  }
+
+  to {
+    font-size: 110px;
+  }
+}
+
+
+#iconLogo {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 767px) {
+  #welcomeHeader {
+    font-size: 72px;
+  }
+  #welcomeSubHeading {
+    font-size: 18px;
+  }
+  @keyframes welcomeHeaderIntro {
+    from {
+      font-size: 0px;
+    }
+
+    to {
+      font-size: 72px;
+    }
+  }
+}
+
+#slide2 {
+  background-color: #3B3738;
+  padding-bottom: 100px;
+  padding-top: 70px;
+  color: white;
+  
+}
+
+h1 {
+  text-align: center;
+}
+
+video {
+  max-width: 480px;
+  max-height: 270px;
+}
+
+#slide3 {
+  background-color: white;
+  padding-bottom: 100px;
+  padding-top: 70px;
+}
+
+.panel-group .panel {
+  border-radius: 2px;
+  border-width: 2px;
+}
+
+.panel-default {
+  border-color: #F26522;
+  > .panel-heading {
+    background-color: #3B3738;
+    /*text-align: center;*/
+  }
+}
+
+.panel-title > {
+  .small {
+    color: white;
+    background-color: none;
+    > a {
+      color: white;
+      background-color: none;
+    }
+  }
+  a {
+    color: white;
+    background-color: none;
+  }
+  small {
+    color: white;
+    background-color: none;
+    > a {
+      color: white;
+      background-color: none;
+    }
+  }
+}
+
+.panel-body {
+  width: 100%;
+}
+
+#profileHeader {
+  color: black;
+}
+
+#profileImage {
+  box-shadow: 10px 10px 20px grey;
+}
+
+#porfilePaddingImage {
+  text-align: center;
+  padding-top: 25px;
+}
+
+#profileWrapper {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#slide4 {
+  background-image: url(../images/slide5/pw_maze_black/pw_maze_black_@2X_2.png);
+  padding-bottom: 100px;
+  padding-top: 70px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: white;
+  h3 {
+    font-size: 30px;
+  }
+  p {
+    text-indent: 30px;
+    font-size: 18px;
+    letter-spacing: .5px;
+  }
+}
+
+#slide5 {
+  background-color: white;
+  padding-bottom: 100px;
+  padding-top: 70px;
+}
+
+.meSam {
+  padding: 70px;
+}
+
+.profileInfo {
+  font-size: 18px;
+  font-family: 'Play', sans-serif;
+}
+
+#iconStyle {
+  padding-right: 10px;
+  color: #F26522;
+}
+
+#slide6 {
+  background-color: #3B3738;
+  padding-bottom: 50px;
+  padding-top: 100px;
+  color: white;
+}
+
+#headHeader {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.page-header {
+  font-size: 60px;
+}
+
+.form-group {
+  width: 70%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-control {
+  padding: 24px;
+  background-color: #eee;
+}
+
+.footer .nav {
+  padding-top: 100px;
+  /*padding-bottom: 15px;*/
+  background-color: #F26522;
+  li {
+    padding-bottom: 20px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+#contactBtn {
+  background-color: #F26522;
+  font-size: 30px;
+}

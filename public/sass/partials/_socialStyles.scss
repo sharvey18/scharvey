@@ -1,0 +1,194 @@
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*.container {
+   margin: 0 auto;
+   padding: 20px 50px;
+   background: white;
+}*/
+
+#sticky-social {
+  left: 0;
+  position: fixed;
+  top: 15%;
+  a {
+    background: #F26522;
+    display: block;
+    height: 35px;
+    font: 16px "Open Sans", sans-serif;
+    line-height: 35px;
+    position: relative;
+    text-align: center;
+    width: 35px;
+    span {
+      line-height: 35px;
+      left: -120px;
+      position: absolute;
+      text-align: center;
+      width: 120px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #sticky-social {
+    display: none;
+  }
+}
+
+/*=========================
+  Icons
+ ================= */
+
+/* footer social icons */
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+/* footer social icons */
+
+#sticky-social .social-network a {
+  &.icoBehance:hover {
+    background-color: #1769ff;
+  }
+  &.icoFacebook:hover {
+    background-color: #3B5998;
+  }
+  &.icoTwitter:hover {
+    background-color: #33ccff;
+  }
+  &.icoGithub:hover {
+    background-color: #4183c4;
+  }
+  &.icoLinkedin:hover {
+    background-color: #007bb7;
+  }
+  &.icoBehance:hover i {
+    color: #fff;
+  }
+}
+
+.social-network a {
+  &.icoFacebook:hover i, &.icoTwitter:hover i, &.icoGithub:hover i, &.icoLinkedin:hover i {
+    color: #fff;
+  }
+}
+
+.social-circle li {
+  a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+  }
+  i {
+    margin: 0;
+    line-height: 30px;
+    text-align: center;
+  }
+  a:hover i {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+}
+
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #fff;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+@media screen and (max-width: 768px) {
+  #responsive_social {
+    background-color: #F26522;
+    padding-top: 50px;
+  }
+  .social-circle li {
+    a {
+      display: block;
+      position: relative;
+      margin: 0 auto 0 auto;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      text-align: center;
+      width: 30px;
+      height: 30px;
+      font-size: 18px;
+    }
+    i {
+      margin: 0;
+      line-height: 30px;
+      text-align: center;
+    }
+    a:hover i {
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -ms--transform: rotate(360deg);
+      transform: rotate(360deg);
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      -ms-transition: all 0.2s;
+      transition: all 0.2s;
+    }
+  }
+  .triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  .social-circle i {
+    color: #fff;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+  }
+}

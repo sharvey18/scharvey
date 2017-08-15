@@ -477,8 +477,8 @@
 					                <div id='collapseTwo' class='panel-collapse collapse' role='tabpanel' aria-labelledby='headingTwo'>
 					                    <div class='panel-body'>
 																<?php
-																	 echo str_repeat($orangeBlock, 8);
-																	 echo str_repeat($whiteBlock, 2);
+																	 echo str_repeat($orangeBlock, 7);
+																	 echo str_repeat($whiteBlock, 3);
 																	?>
 					                    </div>
 					                </div>
@@ -494,8 +494,8 @@
 					                <div id='collapseThree' class='panel-collapse collapse' role='tabpanel' aria-labelledby='headingThree'>
 					                    <div class='panel-body'>
 																<?php
-																	 echo str_repeat($orangeBlock, 8);
-																	 echo str_repeat($whiteBlock, 2);
+																	 echo str_repeat($orangeBlock, 5);
+																	 echo str_repeat($whiteBlock, 5);
 																	?>
 					                    </div>
 					                </div>
@@ -511,8 +511,8 @@
 					                <div id='collapseFour' class='panel-collapse collapse' role='tabpanel' aria-labelledby='headingFour'>
 					                    <div class='panel-body'>
 																<?php
-																	echo str_repeat($orangeBlock, 8);
-																	echo str_repeat($whiteBlock, 2);
+																	echo str_repeat($orangeBlock, 5);
+																	echo str_repeat($whiteBlock, 5);
 																 ?>
 					                    </div>
 					                </div>
@@ -528,8 +528,8 @@
 					                <div id='collapseFive' class='panel-collapse collapse' role='tabpanel' aria-labelledby='headingFive'>
 					                    <div class='panel-body'>
 																<?php
-																	echo str_repeat($orangeBlock, 9);
-																	echo str_repeat($whiteBlock, 1);
+																	echo str_repeat($orangeBlock, 8);
+																	echo str_repeat($whiteBlock, 2);
 																 ?>
 					                    </div>
 					                </div>
@@ -545,8 +545,8 @@
 					                <div id='collapseSix' class='panel-collapse collapse' role='tabpanel' aria-labelledby='headingSix'>
 					                    <div class='panel-body'>
 																<?php
-																	 echo str_repeat($orangeBlock, 9);
-																	 echo str_repeat($whiteBlock, 1);
+																	 echo str_repeat($orangeBlock, 8);
+																	 echo str_repeat($whiteBlock, 2);
 																	?>
 					                    </div>
 					                </div>
@@ -601,8 +601,8 @@
 						                <div id='collapseNine' class='panel-collapse collapse' role='tabpanel' aria-labelledby='headingNine'>
 					                    <div class='panel-body'>
 																<?php
-																	echo str_repeat($orangeBlock, 8);
-																	echo str_repeat($whiteBlock, 2);
+																	echo str_repeat($orangeBlock, 7);
+																	echo str_repeat($whiteBlock, 3);
 																 ?>
 						                    </div>
 						                </div>
@@ -618,8 +618,8 @@
 					                	<div id='collapseTen' class='panel-collapse collapse' role='tabpanel' aria-labelledby='headingTen'>
 					                    	<div class='panel-body'>
 																	<?php
-																		echo str_repeat($orangeBlock, 6);
-																		echo str_repeat($whiteBlock, 4);
+																		echo str_repeat($orangeBlock, 4);
+																		echo str_repeat($whiteBlock, 6);
 																	 ?>
 						                    </div>
 						                </div>
@@ -635,8 +635,8 @@
 					                	<div id='collapseEleven' class='panel-collapse collapse' role='tabpanel' aria-labelledby='headingEleven'>
 					                    	<div class='panel-body'>
 																	<?php
-																		echo str_repeat($orangeBlock, 8);
-																		echo str_repeat($whiteBlock, 2);
+																		echo str_repeat($orangeBlock, 6);
+																		echo str_repeat($whiteBlock, 4);
 																	 ?>
 						                    </div>
 						                </div>
@@ -652,8 +652,8 @@
 						                <div id='collapseTwelve' class='panel-collapse collapse' role='tabpanel' aria-labelledby='headingTwelve'>
 						                    <div class='panel-body'>
 																	<?php
-																		echo str_repeat($orangeBlock, 7);
-																		echo str_repeat($whiteBlock, 3);
+																		echo str_repeat($orangeBlock, 5);
+																		echo str_repeat($whiteBlock, 5);
 																	 ?>
 							                </div>
 							            </div>

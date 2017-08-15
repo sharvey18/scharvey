@@ -6,16 +6,16 @@
 	<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'/>
 	<meta name='robots' content='all,index,follow' />
 
-	// Facebook OG Options
+	<!-- Facebook OG Options -->
 	<meta property="og:url"           content="http://www.scharvey.com" />
 	<meta property="og:type"          content="website" />
 	<meta property="og:title"         content="Sam Harvey's Portfolio || Web Developer" />
-	<meta property="og:description"   content="Web Developer with a passion to learn code and to become best programmer possible" />
+	<meta property="og:description"   content="Web Developer with a passion to learn code and to become the best programmer possible" />
 	<meta property="og:image"         content="http://www.scharvey.com/images/meSam." />
 
 	<title>Harvey Designs</title>
 	<meta name='description' content='Sam Harveys Portfolio Website - Web Developer'/>
-	<link rel='shortcut' href='images/favicon.ico' type='images/x-icon' />
+	<link rel='shortcut icon' href='images/favicon.ico' type='images/x-icon' />
 	<link rel='icon' href='images/favicon.ico' type='images/x-icon' />
 
 	<link href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' rel='stylesheet' />

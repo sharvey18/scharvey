@@ -1,3 +1,4 @@
+@import "partials/variables";
 @import "partials/socialStyles";
 
 body {
@@ -13,56 +14,50 @@ html {
   overflow-x: hidden;
 }
 
-// thank-you styles //
 
-// body, html {
-//   margin: 0;
-//   padding: 0;
-//   background-color: #939598;
-// }
-//
-// .container {
-//   margin-top: 50px;
-// }
-
-/**********************************
-Responsive navbar-brand image CSS
-- Remove navbar-brand padding for firefox bug workaround
-- add 100% height and width auto ... similar to how bootstrap img-responsive class works
-***********************************/
 
 .active {
-  background-color: #F26522;
+  background-color: $orange;
   text-decoration: none;
   line-height: 50px;
 }
 
-.example3 {
-  .navbar-fixed-top {
-    /*margin-top: 50px;*/
-    background-color: #3B3738;
-    border: none;
-  }
-  .navbar-brand {
-    height: 80px;
-  }
-  .navbar-brand {
-    padding: 0px;
-    > img {
-      height: 100%;
-      padding: 15px;
-      width: auto;
-    }
-  }
-  .nav > li > a {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    color: white;
+nav#mainNav {
+  background-color: $gray;
+  border: none;
+  min-height: 100px;
+  button {
+    display: none;
   }
   .navbar-toggle {
     padding: 10px;
     margin: 25px 15px 25px 0;
   }
+  .navbar-brand {
+    padding-top: 10px;
+    > img {
+      height: 8rem;
+      width: auto;
+    }
+  }
+
+  #navbarResponsive {
+    min-height: 100px;
+    ul.navbar-nav {
+      float: right;
+      height: inherit;
+      margin-top: 4.5%;
+      li.nav-item {
+        a.nav-link {
+          color: $white;
+          margin: 0;
+          font-size: 20px;
+          padding: 0 10%;
+        }
+      }
+    }
+  }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -81,12 +76,12 @@ h1 {
   font-family: 'Play', sans-serif;
 }
 
-.slide {
-  width: 100%;
-  height: 100%;
-  /*position: relative;*/
-  /*padding-bottom: 30px;*/
-}
+// .slide {
+//   width: 100%;
+//   height: 100%;
+//   /*position: relative;*/
+//   /*padding-bottom: 30px;*/
+// }
 
 a > {
   .fa-chevron-circle-up.fa-5x, .fa-chevron-circle-down.fa-5x {
@@ -169,22 +164,24 @@ div#scrollButton {
 }
 
 
-#slide1 {
+#header {
   background-image: url(../images/slide1/gplaypattern/gplaypattern.png);
   padding-top: 190px;
   padding-bottom: 70px;
-}
-
-#welcomeHeader {
-  font-size: 110px;
-  text-align: center;
-  animation-name: welcomeHeaderIntro;
-  animation-duration: 3s;
-  animation-delay: 1s;
-}
-
-#welcomeSubHeading {
-  text-align: center;
+  #welcomeHeader {
+    font-size: 110px;
+    text-align: center;
+    animation-name: welcomeHeaderIntro;
+    animation-duration: 3s;
+    animation-delay: 1s;
+  }
+  #welcomeSubHeading {
+    text-align: center;
+  }
+  #iconLogo {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 @keyframes welcomeHeaderIntro {
@@ -195,12 +192,6 @@ div#scrollButton {
   to {
     font-size: 110px;
   }
-}
-
-
-#iconLogo {
-  margin-right: auto;
-  margin-left: auto;
 }
 
 @media screen and (max-width: 767px) {
@@ -221,27 +212,47 @@ div#scrollButton {
   }
 }
 
-#slide2 {
-  background-color: #3B3738;
+section {
+  .container {
+    #headHeader {
+      text-align: center;
+      padding-bottom: 25px;
+    }
+    .page-header {
+      font-size: 60px;
+    }
+  }
+}
+
+
+
+#works {
+  background-color: $darkGray;
   padding-bottom: 100px;
   padding-top: 70px;
   color: white;
-
+  h1 {
+    text-align: center;
+  }
+  video {
+    max-width: 480px;
+    max-height: 270px;
+  }
 }
 
-h1 {
-  text-align: center;
-}
-
-video {
-  max-width: 480px;
-  max-height: 270px;
-}
-
-#slide3 {
+#skills {
   background-color: white;
   padding-bottom: 100px;
   padding-top: 70px;
+  .container {
+    #headHeader {
+      text-align: center;
+      padding-bottom: 25px;
+    }
+    .page-header {
+      font-size: 60px;
+    }
+  }
 }
 
 .panel-group .panel {
@@ -302,7 +313,7 @@ video {
   padding-right: 10%;
 }
 
-#slide4 {
+#me {
   background-image: url(../images/slide5/pw_maze_black/pw_maze_black_@2X_2.png);
   padding-bottom: 100px;
   padding-top: 70px;
@@ -319,58 +330,76 @@ video {
   }
 }
 
-#slide5 {
+#profile {
   background-color: white;
   padding-bottom: 100px;
   padding-top: 70px;
+  .meSam {
+    padding: 70px;
+  }
+  .profileInfo {
+    font-size: 18px;
+    font-family: $play;
+  }
+  #iconStyle {
+    padding-right: 10px;
+    color: #F26522;
+  }
 }
 
-.meSam {
-  padding: 70px;
-}
-
-.profileInfo {
-  font-size: 18px;
-  font-family: 'Play', sans-serif;
-}
-
-#iconStyle {
-  padding-right: 10px;
-  color: #F26522;
-}
-
-#slide6 {
+// CONTACTS //
+#contact {
   background-color: #3B3738;
   padding-bottom: 50px;
   padding-top: 100px;
   color: white;
+  .form-group {
+    width: 70%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    .form-control {
+      padding: 24px;
+      background-color: #eee;
+    }
+  }
   .facebook-timeline {
     text-align: center;
     padding-top: 4rem;
   }
 }
 
-#headHeader {
+.fb-feed {
   text-align: center;
-  padding-bottom: 25px;
+  .fb-item {
+    a.image {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 35rem;
+    }
+  }
+  .well {
+    background: $darkGray;
+  }
+  a {
+    color: $white;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 35rem;
+  }
 }
 
-.page-header {
-  font-size: 60px;
-}
 
-.form-group {
-  width: 70%;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.form-control {
-  padding: 24px;
-  background-color: #eee;
-}
-
+// FOOTER STYLES //
 .footer .nav {
   padding-top: 100px;
   /*padding-bottom: 15px;*/
